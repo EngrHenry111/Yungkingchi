@@ -15,7 +15,7 @@ import phone from "../assets/images/phone.avif";
 import shoes from "../assets/images/shoes.jpg";
 import plant from "../assets/images/plants.avif";
 
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import Particles from "react-tsparticles";
 
 const YILCard = () => {
@@ -143,6 +143,7 @@ const YILCard = () => {
 
         {/* CONTACT */}
         <div className="contact">
+          <p style={{color: "#a855f7", fontSize: "22px"}}>Contact Us:</p>
           <p>🇨🇳 +86 166 2469 3442</p>
           <p>🇳🇬 +234 810 038 5127</p>
         </div>
