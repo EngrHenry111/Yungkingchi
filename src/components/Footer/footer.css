@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #020617;
+  color: white;
+}
+
+.page {
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 28px;
+}
+
+.hero span {
+  color: #22c55e;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.cta-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #22c55e, #a855f7);
+  border: none;
+  color: white;
+}
+
+/* PRODUCTS */
+.products-section {
+  padding: 30px 15px;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* SERVICES */
+.services {
+  padding: 30px 15px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.service-card {
+  padding: 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* TRUST */
+.trust {
+  padding: 30px 15px;
+}
+
+.trust-grid {
+  display: grid;
+  gap: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 30px;
+}
+
+.cta button {
+  padding: 12px 20px;
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px 15px;
+  text-align: center;
+  background: #010409;
+}
+
+.footer h3, p{
+    color: white;
+}
+
+
+.socials {
+  margin: 15px 0;
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #22c55e;
+}
+
+.copy {
+  font-size: 12px;
+  color: #777;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

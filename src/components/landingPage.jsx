@@ -1,5 +1,13 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Autoplay, Pagination } from "swiper/modules";
+
+
 import React, { useEffect, useState } from "react";
 import "./landing.css";
+
 import logo from "../assets/images/logo.jpeg";
 import car from "../assets/images/car.avif";
 import ebike from "../assets/images/ebike.webp";
@@ -81,16 +89,31 @@ const YILCard = () => {
 
         {/* 🔥 AUTO SLIDER */}
         <div className="carousel">
-          <motion.img
-            key={index}
-            src={products[index]}   // ✅ FIXED (THIS WAS YOUR MAIN BUG)
-            alt="product"
-            className="carousel-img"
-            initial={{ opacity: 0.4, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          />
-        </div>
+
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    spaceBetween={15}
+    slidesPerView={1}
+    autoplay={{ delay: 2500 }}
+    pagination={{ clickable: true }}
+  >
+
+    {products.map((item, i) => (
+      <SwiperSlide key={i}>
+        <motion.img
+          src={item}
+          alt="product"
+          className="carousel-img"
+          initial={{ opacity: 0.8, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+        />
+      </SwiperSlide>
+    ))}
+
+  </Swiper>
+
+</div>
 
         {/* SERVICES */}
         <div className="services">
@@ -125,11 +148,16 @@ const YILCard = () => {
         </div>
 
         {/* FOOTER */}
-        <div className="footer">
+        {/* <div className="footer">
           Yungkingchi Intl. Ltd.
-        </div>
+        </div> */}
 
       </motion.div>
+
+
+      
+
+      
     </div>
   );
 };
