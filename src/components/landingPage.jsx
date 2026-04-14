@@ -141,6 +141,19 @@ const YILCard = () => {
           </div>
         </div>
 
+        {/* TRUST */}
+      <section className="trust">
+        <h2>Why Choose Us</h2>
+
+        <div className="trust-grid">
+          <div>✔ Trusted Global Network</div>
+          <div>✔ Fast Delivery</div>
+          <div>✔ Affordable Pricing</div>
+          <div>✔ Reliable Support</div>
+        </div>
+      </section>
+
+
         {/* CONTACT */}
         <div className="contact">
           <p style={{color: "#a855f7", fontSize: "22px"}}>Contact Us:</p>
