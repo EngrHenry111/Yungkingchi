@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/share/18RX9kdkNz/?mibextid=wwXIfr"><FaFacebook /></a>
           <a href="https://www.instagram.com/yungkingchi?igsh=dDdhb3pybmpueXdi&utm_source=qr"><FaInstagram /></a>
           <a href="#"><FaLinkedin /></a>
-          <a href="www.tiktok.com/@kingchivideos"><FaTiktok /></a>
+          <a href="https://www.tiktok.com/@kingchivideos?_r=1&_t=ZN-95cIsybQ2ty"><FaTiktok /></a>
         </div>
 
         <p className="copy">© 2026 All rights reserved</p>
