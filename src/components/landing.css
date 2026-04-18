@@ -326,6 +326,42 @@
   object-fit: cover;
 }
 
+
+/* PAGINATION CONTAINER */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 10px;
+  display: flex !important;
+  flex-wrap: nowrap !important;   /* 🚀 FORCE ONE LINE */
+  overflow-x: auto;               /* 🚀 ENABLE SCROLL */
+  gap: 6px;
+  padding: 5px 10px;
+  justify-content: flex-start;
+}
+
+/* HIDE SCROLLBAR */
+.swiper-pagination::-webkit-scrollbar {
+  display: none;
+}
+
+/* DOT STYLE */
+.swiper-pagination-bullet {
+  flex-shrink: 0;   /* 🚀 prevents wrapping */
+  width: 8px;
+  height: 8px;
+  background: #888;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+/* ACTIVE DOT */
+.swiper-pagination-bullet-active {
+  background: #a855f7;
+  width: 20px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
 /* SERVICES */
 .services {
   margin-top: 25px;

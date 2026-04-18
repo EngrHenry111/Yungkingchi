@@ -161,6 +161,9 @@ const handleTogglePlay = () => {
     setPlaying(true);
   }
 };
+
+
+
   return (
     <div className="yil-wrapper">
 
@@ -216,8 +219,7 @@ const handleTogglePlay = () => {
             spaceBetween={15}
             slidesPerView={1}
             autoplay={{ delay: 2500 }}
-            pagination={{ clickable: true }}
-          >
+pagination={{ clickable: true, dynamicBullets: true }}           >
             {products.map((item, i) => (
               <SwiperSlide key={i}>
                 <motion.img
